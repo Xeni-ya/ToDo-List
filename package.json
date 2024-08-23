@@ -1,0 +1,17 @@
+{
+  "name": "week11-todo-list",
+  "version": "1.0.0",
+  "description": "Работа №2 на одиннадцатой неделе обучения.  Создание списка задач с использованием HTML, CSS и JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0"
+  }
+}
