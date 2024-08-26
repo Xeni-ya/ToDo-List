@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <title>ToDo List</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="inner">
+      <input type="text" class="inner-input" id="taskInput" placeholder="Введите задачу">
+      <button id="addButton" onclick="addTask()">Добавить</button>
+    </div>
+    <div class="tasks">
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+
+  <script src="./assets/script/script.js"></script>
 </body>
 </html>
