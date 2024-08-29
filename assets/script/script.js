@@ -15,17 +15,22 @@ const addButton = document.getElementById('addButton');
 const taskList = document.getElementById('taskList');
 
 function createTask() {
+  const taskText = taskInput.value.trim();
+  if (taskText === '') {
+  alert('Введите задачу.');
+  return;
+  }
   const newElement = document.createElement('li');
-  newElement.textContent = taskInput.value;
+  newElement.textContent = taskText;
   taskList.append(newElement);
-  //document.body.innerHTML = ''; //Записав пустую строку, можно удалить всё содержимое элемента
   taskInput.value = '';
-}
+  taskInput.focus();
+  }
 
 function checkTask(evt) {
   if (evt.target.tagName === 'LI') {
     // Код, который будет выполнен при клике на элемент <li>
-    evt.target.classList.toggle('active'); // переключение класса
+    evt.target.classList.toggle('completed'); // Переключаем класс "completed"
   }
 }
 
